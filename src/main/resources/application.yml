@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cohort-app
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: cohortdb
+    password: oracle21
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Options: validate, update, create-drop
+    show-sql: true # Show SQL queries in logs
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
